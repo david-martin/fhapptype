@@ -17,7 +17,7 @@
     "feedhenry",
     "app",
     "mobile",
-    "lint"
+    "detection"
   ],
   "author": "david.martin@feedhenry.com",
   "license": "MIT",
