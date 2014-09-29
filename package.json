@@ -1,0 +1,28 @@
+{
+  "name": "fhapptype",
+  "version": "1.0.0",
+  "description": "FeedHenry app type detector",
+  "main": "index.js",
+  "bin": {
+    "fhapptype": "./bin/fhapptype.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/david-martin/fhapptype.git"
+  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "feedhenry",
+    "app",
+    "mobile",
+    "lint"
+  ],
+  "author": "david.martin@feedhenry.com",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^0.9.0",
+    "glob": "^4.0.6"
+  }
+}
