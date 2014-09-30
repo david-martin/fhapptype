@@ -13,18 +13,29 @@ Sample output:
 
 ```
 {
+  "globs": {
+    "hasPackageJsonLocation": [
+      "/Users/dmartin/templates/welcome-app/package.json"
+    ],
+    "hasWWWIndexLocation": [
+      "/Users/dmartin/templates/welcome-app/www/index.html"
+    ],
+    "hasJSSDKLocation": [
+      "/Users/dmartin/templates/welcome-app/www/js/libs/feedhenry/feedhenry.js"
+    ]
+  },
   "flags": {
     "hasApplicationJS": false,
     "hasPackageJson": true,
     "hasPublicIndex": false,
-    "hasWWWIndex": false,
+    "hasWWWIndex": true,
     "hasCordovaConfigJson": false,
     "hasCordovaConfigXml": false,
-    "hasJSSDK": false,
     "hasAndroidManifest": false,
     "hasTiAppXml": false,
-    "hasSLN": false,
     "hasPlist": false,
+    "hasJSSDK": true,
+    "hasSLN": false,
     "hasCSProj": false,
     "hasXamarinAndroidSDK": false,
     "hasMainPage": false
@@ -32,16 +43,14 @@ Sample output:
   "weights": {
     "cloud_nodejs": -4,
     "webapp_advanced": -4,
-    "client_hybrid": -4,
-    "webapp_basic": -4,
+    "client_hybrid": 7,
+    "webapp_basic": 7,
     "client_native_android": -10,
     "client_appcelerator": -10,
     "client_native_windowsphone8": -12,
     "client_xamarin": -12
   },
   "detected": [
-    "cloud_nodejs",
-    "webapp_advanced",
     "client_hybrid",
     "webapp_basic"
   ]

@@ -1,6 +1,6 @@
 {
   "name": "fhapptype",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "FeedHenry app type detector",
   "main": "index.js",
   "bin": {

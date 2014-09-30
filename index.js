@@ -5,6 +5,7 @@ var path = require('path');
 
 module.exports = function(dir, cb) {
   var result = {
+    globs: {},
     flags: {},
     weights: {},
     detected: []
@@ -50,7 +51,7 @@ module.exports = function(dir, cb) {
     flag: 'hasCordovaConfigXml',
     types: ['client_advanced_hybrid']
   }, {
-    glob: 'www/feedhenry.js',
+    glob: '**/feedhenry.js',
     flag: 'hasJSSDK',
     types: ['client_hybrid', 'webapp_basic']
   }, {
@@ -97,6 +98,7 @@ module.exports = function(dir, cb) {
 
       if (res && res.length > 0) {
         result.flags[file.flag] = true;
+        result.globs[file.flag + 'Location'] = res;
         file.types.forEach(function(type) {
           if ('number' !== typeof result.weights[type]) result.weights[type] = 0;
           result.weights[type] += (file.weight || 1);
