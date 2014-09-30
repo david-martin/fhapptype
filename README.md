@@ -13,13 +13,37 @@ Sample output:
 
 ```
 {
-  "cloud_nodejs": -6,
-  "webapp_advanced": -6,
-  "webapp_basic": 6,
-  "client_hybrid": 6,
-  "android": -10,
-  "titanium": -10,
-  "windowsphone": -12,
-  "xamarin": -12
+  "flags": {
+    "hasApplicationJS": false,
+    "hasPackageJson": true,
+    "hasPublicIndex": false,
+    "hasWWWIndex": false,
+    "hasCordovaConfigJson": false,
+    "hasCordovaConfigXml": false,
+    "hasJSSDK": false,
+    "hasAndroidManifest": false,
+    "hasTiAppXml": false,
+    "hasSLN": false,
+    "hasPlist": false,
+    "hasCSProj": false,
+    "hasXamarinAndroidSDK": false,
+    "hasMainPage": false
+  },
+  "weights": {
+    "cloud_nodejs": -4,
+    "webapp_advanced": -4,
+    "client_hybrid": -4,
+    "webapp_basic": -4,
+    "client_native_android": -10,
+    "client_appcelerator": -10,
+    "client_native_windowsphone8": -12,
+    "client_xamarin": -12
+  },
+  "detected": [
+    "cloud_nodejs",
+    "webapp_advanced",
+    "client_hybrid",
+    "webapp_basic"
+  ]
 }
 ```
